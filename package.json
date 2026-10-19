@@ -1,0 +1,126 @@
+{
+  "name": "react-native-toastify-lite",
+  "version": "1.0.0",
+  "description": "Morphing, physics-based toast notifications for React Native. A pill that springs open into a card, with stack and morph modes, promise toasts, swipe to dismiss and full theming. iOS and Android, no Expo needed, only Reanimated and react-native-svg.",
+  "keywords": [
+    "react-native",
+    "react-native-toast",
+    "react-native-toastify",
+    "toastify",
+    "toast",
+    "toasts",
+    "toast-notification",
+    "toast-notifications",
+    "toast-message",
+    "notification",
+    "notifications",
+    "react-native-notifications",
+    "snackbar",
+    "alert",
+    "banner",
+    "flash-message",
+    "popup",
+    "morph",
+    "morphing",
+    "morphing-toast",
+    "pill",
+    "spring",
+    "physics",
+    "animation",
+    "animated",
+    "reanimated",
+    "react-native-reanimated",
+    "sonner",
+    "sileo",
+    "swipe-to-dismiss",
+    "promise-toast",
+    "progress-bar",
+    "stack",
+    "svg",
+    "react-native-svg",
+    "ios",
+    "android",
+    "dynamic-island",
+    "lightweight",
+    "typescript"
+  ],
+  "author": "Tanvir Faysal <t.faysal45@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanvirfaysal11/react-native-toastify-lite"
+  },
+  "homepage": "https://github.com/tanvirfaysal11/react-native-toastify-lite#readme",
+  "bugs": {
+    "url": "https://github.com/tanvirfaysal11/react-native-toastify-lite/issues"
+  },
+  "main": "./lib/commonjs/index.js",
+  "module": "./lib/module/index.js",
+  "types": "./lib/typescript/index.d.ts",
+  "react-native": "./lib/module/index.js",
+  "source": "./src/index.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./lib/typescript/index.d.ts",
+      "react-native": "./lib/module/index.js",
+      "import": "./lib/module/index.js",
+      "require": "./lib/commonjs/index.js",
+      "default": "./lib/module/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "assets",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf lib",
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf lib && tsc -p tsconfig.build.json --outDir lib/module && tsc -p tsconfig.build.json --module commonjs --moduleResolution node10 --noCheck --outDir lib/commonjs && tsc -p tsconfig.build.json --emitDeclarationOnly --declaration --outDir lib/typescript",
+    "test": "npm run build && node --test test/store.test.cjs test/layout.test.cjs test/theme.test.cjs && jest",
+    "test:jest": "jest",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run typecheck && npm run test"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.72",
+    "react-native-reanimated": ">=3.6.0 <5",
+    "react-native-safe-area-context": ">=4",
+    "react-native-svg": ">=13"
+  },
+  "peerDependenciesMeta": {
+    "react-native-safe-area-context": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@react-native/jest-preset": "^0.88.0",
+    "@testing-library/react-native": "^14.1.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "5.10.1",
+    "react-native-svg": "15.16.0",
+    "react-native-worklets": "0.13.0",
+    "test-renderer": "^1.3.1",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
