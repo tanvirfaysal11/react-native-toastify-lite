@@ -74,6 +74,7 @@
     "lib",
     "src",
     "assets",
+    "docs",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"
