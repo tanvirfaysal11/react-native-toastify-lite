@@ -34,23 +34,25 @@ Each topic is one small file in [`src/examples`](src/examples). Open the file to
 | File | What it shows | GIF |
 | --- | --- | --- |
 | [`01-variants.tsx`](src/examples/01-variants.tsx) | success, error, info, warning, default | [variants.gif](gifs/variants.gif) |
-| [`02-patterns.tsx`](src/examples/02-patterns.tsx) | action button, title only, long text, `update()` in place | [action.gif](gifs/action.gif) |
+| [`02-patterns.tsx`](src/examples/02-patterns.tsx) | action button, title only, long text, `update()` in place | [patterns.gif](gifs/patterns.gif) |
 | [`03-promise.tsx`](src/examples/03-promise.tsx) | `toast.promise` resolve and reject | [promise.gif](gifs/promise.gif) |
 | [`04-custom.tsx`](src/examples/04-custom.tsx) | custom header + body, light fill, custom icon | [custom.gif](gifs/custom.gif) |
-| [`05-animation.tsx`](src/examples/05-animation.tsx) | presets (smooth, snappy, gentle, minimal) and custom springs | [presets.gif](gifs/presets.gif) |
+| [`05-animation.tsx`](src/examples/05-animation.tsx) | presets (smooth, snappy, gentle, minimal) and custom springs | [presets.gif](gifs/presets.gif), [springs.gif](gifs/springs.gif) |
 | [`06-shape-position.tsx`](src/examples/06-shape-position.tsx) | squircle, radius, width, all positions | [shape.gif](gifs/shape.gif), [positions.gif](gifs/positions.gif) |
 | [`07-stack.tsx`](src/examples/07-stack.tsx) | stack mode: pile, fan out, bodies | [stack.gif](gifs/stack.gif) |
+| [`08-features.tsx`](src/examples/08-features.tsx) | duplicate grouping, secondary action, light card | [features.gif](gifs/features.gif) |
 | (any toast) | swipe up / sideways to dismiss | [swipe.gif](gifs/swipe.gif) |
 
 ## GIFs
 
 | | |
 | --- | --- |
-| **Variants**<br>![](gifs/variants.gif) | **Action + update**<br>![](gifs/action.gif) |
+| **Variants**<br>![](gifs/variants.gif) | **Patterns**<br>![](gifs/patterns.gif) |
 | **Promise**<br>![](gifs/promise.gif) | **Custom**<br>![](gifs/custom.gif) |
-| **Presets + springs**<br>![](gifs/presets.gif) | **Shape**<br>![](gifs/shape.gif) |
+| **Presets**<br>![](gifs/presets.gif) | **Springs**<br>![](gifs/springs.gif) |
+| **Shape**<br>![](gifs/shape.gif) | **Positions**<br>![](gifs/positions.gif) |
 | **Stack mode**<br>![](gifs/stack.gif) | **Swipe to dismiss**<br>![](gifs/swipe.gif) |
-| **Positions**<br>![](gifs/positions.gif) | |
+| **Features**<br>![](gifs/features.gif) | |
 
 The GIFs were recorded from this exact app code rendered in Chromium (react-native-web) at
 iPhone size, frame by frame at 30 fps. On a device the motion is the same; fonts are the
