@@ -84,16 +84,10 @@ Full setup (Babel plugin, Expo, iOS pods) is in [Installation](./docs/installati
   </tr>
   <tr>
     <td align="center">
-      <video controls poster="assets/android-poster.png" preload="metadata" width="300" height="600" style="max-width:100%">
-        <source src="assets/android.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <img src='/assets//android-toastify.gif' width="100%" alt="android-gif">
     </td>
     <td align="center">
-      <video controls poster="assets/ios-poster.png" preload="metadata" width="300" height="600" style="max-width:100%">
-        <source src="assets/ios.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <img src='/assets//ios-toastify.gif' width="100%" alt="ios-gif">
     </td>
   </tr>
 </table>
